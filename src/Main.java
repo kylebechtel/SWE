@@ -10,7 +10,7 @@ public class Main {
 
         Dependents Dep = new Dependents();
         Income Inc = new Income();
-        int annualincome = 1, numofdependents = 0, Incometax, Dependenttax;
+        int annualincome = 1, numofdependents = 0, Incometax = 0, Dependenttax = 0;
         double tax = 0.0;
 
         // Gets user input
