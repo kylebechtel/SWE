@@ -1,4 +1,6 @@
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 /**
@@ -10,8 +12,8 @@ public class Main {
 
         Dependents Dep = new Dependents();
         Income Inc = new Income();
-        int annualincome = 1, numofdependents = 0, Incometax = 0, Dependenttax = 0;
-        double tax = 0.0;
+        int annualincome = 1, numofdependents = 0;
+        double tax = 0.0, Incometax = 0, Dependenttax = 0;
 
         // Gets user input
         annualincome = Inc.getIncome();
@@ -22,9 +24,12 @@ public class Main {
         Dependenttax = Dep.Tax(numofdependents);
 
         //Calculates actual tax rate based
+        //rounds to the nearest third decimal place
         tax = Incometax * Dependenttax;
-        tax = tax/1000;
-
+        BigDecimal bd = new BigDecimal(tax);
+        bd = bd.setScale(6, RoundingMode.HALF_UP);
+        tax = bd.doubleValue();
+        
         System.out.println("income = " + annualincome +  " dependents = " + numofdependents + " tax = " + tax );
 
 

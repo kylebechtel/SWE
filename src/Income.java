@@ -7,14 +7,14 @@ import java.util.Scanner;
  */
 public class Income {
 
-    int Tax(int income){
-        int taxrate =0;
-        if(income > 0 && income <= 20000) taxrate = 4;
-        else if(income > 20000 && income <= 30000) taxrate = 5;
-        else if(income > 30000 && income <= 40000) taxrate = 6;
-        else if(income > 40000 && income <= 50000) taxrate = 7;
-        else if(income > 50000 && income <= 90000) taxrate = 10;
-        else if(income > 90000) taxrate = 13;
+    double Tax(int income){
+        double taxrate = 0;
+        if(income > 0 && income <= 20000) taxrate = .04;
+        else if(income > 20000 && income <= 30000) taxrate = .05;
+        else if(income > 30000 && income <= 40000) taxrate = .06;
+        else if(income > 40000 && income <= 50000) taxrate = .07;
+        else if(income > 50000 && income <= 90000) taxrate = .10;
+        else if(income > 90000) taxrate = .13;
         else if(income <= 0) {
             System.out.println("Error Code: You appear to be homeless, no taxes for you");
         }
