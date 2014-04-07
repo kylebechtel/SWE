@@ -33,7 +33,7 @@ public class Income {
                     while(true){
                         System.out.println("Please enter your annual wages, no commas or text necessary.");
                         income = sc.nextInt();
-                        if(income > -1)
+                        if(income > 0)
                         return income;
                         System.out.println("I'm sorry that your annual wage is " + income + ", but I can't do anything with that information. Please try again.\n");
                     }

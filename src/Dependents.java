@@ -24,16 +24,22 @@ public class Dependents {
     or data in the incorrect format it returns 0.
      */
     int getDependents(){
-        int Dependents = 0;
-        Scanner sc = new Scanner(System.in);
-        try{
-        System.out.println("Please enter the number of dependents you claim, no commas or text necessary");
-        Dependents = sc.nextInt();
-        return Dependents;
-        }
-        catch(Exception e) {
-            System.out.println("Oy, how many kids do you have again");
-            return Dependents;
-        }
+    	while(true)
+    	{
+	        int Dependents = 0;
+	        Scanner sc = new Scanner(System.in);
+	        try{
+	        	while (true)
+	        	{
+			        System.out.println("Please enter the number of dependents you claim, no commas or text necessary.");
+			        Dependents = sc.nextInt();
+			        if (Dependents > -1)
+			        	return Dependents;
+	        	}
+	        }
+	        catch(Exception e) {
+	            System.out.println("Oy, how many kids do you have again?");
+	        }
+    	}
     }
 }
