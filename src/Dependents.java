@@ -15,7 +15,7 @@ public class Dependents {
         if(numofdeps == 1) taxrate = .10;
         else if(numofdeps == 2 || numofdeps == 3) taxrate = .25;
         else if (numofdeps > 3) taxrate = .40;
-        else if (numofdeps < 0) System.out.println("umm, im not sure what your doing with your kids, but your doing it wrong");
+        else if (numofdeps < 0) System.out.println("Umm, im not sure what you're doing with your kids, but you're doing it wrong.");
 
         return taxrate;
     }

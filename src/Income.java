@@ -26,21 +26,20 @@ public class Income {
     or data in the incorrect format it returns 0.
      */
     int getIncome(){
-        int income = 0;
-        Scanner sc = new Scanner(System.in);
             while(true){
-
+            	int income = 0;
+                Scanner sc = new Scanner(System.in);
                 try{
                     while(true){
-                        System.out.println("Please enter your annual wages, no commas or text necessary");
+                        System.out.println("Please enter your annual wages, no commas or text necessary.");
                         income = sc.nextInt();
                         if(income > -1)
                         return income;
+                        System.out.println("I'm sorry that your annual wage is " + income + ", but I can't do anything with that information. Please try again.\n");
                     }
                 }
                 catch(Exception e){
-                    System.out.println("Are you homeless? please enter a proper input.  numbers only");
-                    //return income;
+                    System.out.println("Are you homeless? please enter a proper input.  numbers only.\n");
                 }
             }
 
