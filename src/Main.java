@@ -29,7 +29,12 @@ public class Main {
         BigDecimal bd = new BigDecimal(tax);
         bd = bd.setScale(6, RoundingMode.HALF_UP);
         tax = bd.doubleValue();
-        
+
+        tax = tax * annualincome;
+        BigDecimal b = new BigDecimal(tax);
+        b = b.setScale(6, RoundingMode.HALF_UP);
+        tax = b.doubleValue();
+
         System.out.println("income = " + annualincome +  " dependents = " + numofdependents + " tax = " + tax );
 
 
