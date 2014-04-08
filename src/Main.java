@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 
 public class Main {
-    public static void main(String [ ] args) {
+    public static void main(String[] args) {
 
         Dependents Dep = new Dependents();
         Income Inc = new Income();
@@ -33,10 +33,10 @@ public class Main {
         tax = tax * annualincome;
         BigDecimal b = new BigDecimal(tax);
         b = b.setScale(6, RoundingMode.HALF_UP);
+
         tax = b.doubleValue();
 
         System.out.println("income = " + annualincome +  " dependents = " + numofdependents + " tax = " + tax );
-
 
     }
 
