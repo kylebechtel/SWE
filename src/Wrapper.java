@@ -5,6 +5,46 @@ import java.math.RoundingMode;
  * Created by Kyle Bechtel on 4/9/2014.
  */
 public class Wrapper {
+	
+	public static void Run()
+	{
+		assert calculateTax(0, 0) == 0;
+		assert calculateTax(20000, -1) == 0;
+		assert calculateTax(20000, 0) == 800;
+		assert calculateTax(20000, 1) == 720;
+		assert calculateTax(20000, 3) == 600;
+		assert calculateTax(20000, 5) == 480;
+		
+		assert calculateTax(30000, -1) == 0;
+		assert calculateTax(30000, 0) == 1500;
+		assert calculateTax(30000, 1) == 1350;
+		assert calculateTax(30000, 3) == 1125;
+		assert calculateTax(30000, 5) == 900;
+		
+		assert calculateTax(40000, -1) == 0;
+		assert calculateTax(40000, 0) == 2400;
+		assert calculateTax(40000, 1) == 2160;
+		assert calculateTax(40000, 3) == 1800;
+		assert calculateTax(40000, 5) == 1440;
+		
+		assert calculateTax(50000, -1) == 0;
+		assert calculateTax(50000, 0) == 3500;
+		assert calculateTax(50000, 1) == 3150;
+		assert calculateTax(50000, 3) == 2625;
+		assert calculateTax(50000, 5) == 2100;
+		
+		assert calculateTax(90000, -1) == 0;
+		assert calculateTax(90000, 0) == 9000;
+		assert calculateTax(90000, 1) == 8100;
+		assert calculateTax(90000, 3) == 6750;
+		assert calculateTax(90000, 5) == 5400;
+		
+		assert calculateTax(100000, -1) == 0;
+		assert calculateTax(100000, 0) == 13000;
+		assert calculateTax(100000, 1) == 11700;
+		assert calculateTax(100000, 3) == 9750;
+		assert calculateTax(100000, 5) == 7800;
+	}
 
     public static double calculateTax(int annualincome, int Dependents) {
 
