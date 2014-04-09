@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -41,7 +40,10 @@ public class Income {
 							.println("Please enter your annual wages, no commas or text necessary.");
 					income = sc.nextInt();
 					if (income > 0)
+					{
+						sc.close();
 						return income;
+					}
 					System.out
 							.println("I'm sorry that your annual wage is "
 									+ income
