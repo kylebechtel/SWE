@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0ba2a7b-7576-4d9c-b711-eccca368a511" name="Default" comment="Created wrapper, fixed calculation errors">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wrapper/Wrapper.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Wrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="d0ba2a7b-7576-4d9c-b711-eccca368a511" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SWE.iws" />
@@ -393,6 +389,11 @@
       <created>1396898781807</created>
       <updated>1396898781807</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created wrapper, fixed calculation errors">
+      <created>1397060694237</created>
+      <updated>1397060694237</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
