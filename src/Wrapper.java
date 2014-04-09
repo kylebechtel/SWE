@@ -1,27 +1,25 @@
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.Scanner;
 
 /**
- * Created by Kyle Bechtel on 3/5/14.
+ * Created by Kyle Bechtel on 4/9/2014.
  */
+public class Wrapper {
 
-public class Main {
-    public static void main(String[] args) {
+    public static double calculateTax(int annualincome, int Dependents) {
+
 
         Dependents Dep = new Dependents();
         Income Inc = new Income();
-        int annualincome = 1, numofdependents = 0;
         double tax = 0.0, Incometax = 0, Dependenttax = 0;
 
         // Gets user input
-        annualincome = Inc.getIncome();
-        numofdependents = Dep.getDependents();
+        if(annualincome < 1) return 0;
+        if(Dependents < 0) return 0;
 
         //Calculates tax rates via the user input
         Incometax = Inc.Tax(annualincome);
-        Dependenttax = Dep.Tax(numofdependents);
+        Dependenttax = Dep.Tax(Dependents);
 
         //Calculates actual tax rate based
         //rounds to the nearest third decimal place
@@ -35,9 +33,7 @@ public class Main {
         b = b.setScale(6, RoundingMode.HALF_UP);
 
         tax = b.doubleValue();
-
-        System.out.println("income = " + annualincome +  " dependents = " + numofdependents + " tax = " + tax );
-
+        System.out.println("income = " + annualincome +  " dependents = " +Dependents + " tax = " + tax );
+        return tax;
     }
-
 }

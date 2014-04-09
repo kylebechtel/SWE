@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SWE.iml" filepath="$PROJECT_DIR$/SWE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wrapper/Wrapper.iml" filepath="$PROJECT_DIR$/Wrapper/Wrapper.iml" />
     </modules>
   </component>
 </project>
