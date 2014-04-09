@@ -7,6 +7,7 @@ import java.util.Scanner;
  */
 
 public class Main {
+<<<<<<< HEAD
 	public static void main(String[] args) {
 
 		Wrapper.Run();
@@ -39,5 +40,38 @@ public class Main {
 		System.out.println("income = " + annualincome + " dependents = "
 				+ numofdependents + " tax = " + tax);
 	}
+=======
+    public static void main(String[] args) {
+
+        Dependents Dep = new Dependents();
+        Income Inc = new Income();
+        int annualincome = 1, numofdependents = 0;
+        double tax = 0.0, Incometax = 0, Dependenttax = 0;
+
+        // Gets user input
+        annualincome = Inc.getIncome();
+        numofdependents = Dep.getDependents();
+
+        //Calculates tax rates via the user input
+        Incometax = Inc.Tax(annualincome);
+        Dependenttax = Dep.Tax(numofdependents);
+
+        //Calculates actual tax rate based
+        //rounds to the nearest third decimal place
+        tax = Incometax * annualincome;
+        BigDecimal bd = new BigDecimal(tax);
+        bd = bd.setScale(6, RoundingMode.HALF_UP);
+        tax = bd.doubleValue();
+
+        tax = tax - (tax * Dependenttax);
+        BigDecimal b = new BigDecimal(tax);
+        b = b.setScale(6, RoundingMode.HALF_UP);
+
+        tax = b.doubleValue();
+
+        System.out.println("income = " + annualincome +  " dependents = " + numofdependents + " tax = " + tax );
+        
+    }
+>>>>>>> 7a2b93e534a77247c45c7ce3a08fb125aec74583
 
 }
