@@ -11,7 +11,7 @@ public class Dependents {
     Calculates the tax rate based on the number of dependents
      */
     double Tax(int numofdeps){
-        double taxrate = 1;
+        double taxrate = 0;
         if(numofdeps == 1) taxrate = .10;
         else if(numofdeps == 2 || numofdeps == 3) taxrate = .25;
         else if (numofdeps > 3) taxrate = .40;

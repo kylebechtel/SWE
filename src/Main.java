@@ -37,7 +37,7 @@ public class Main {
         tax = b.doubleValue();
 
         System.out.println("income = " + annualincome +  " dependents = " + numofdependents + " tax = " + tax );
-
+        
     }
 
 }
