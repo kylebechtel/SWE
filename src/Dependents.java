@@ -32,10 +32,7 @@ public class Dependents {
 							.println("Please enter the number of dependents you claim, no commas or text necessary.");
 					Dependents = sc.nextInt();
 					if (Dependents > -1)
-					{
-						sc.close();
 						return Dependents;
-					}
 				}
 			} catch (Exception e) {
 				System.out.println("Oy, how many kids do you have again?");
