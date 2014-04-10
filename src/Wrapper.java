@@ -8,6 +8,7 @@ public class Wrapper {
 	
 	public static void Run()
 	{
+        //justins tests
 		assert calculateTax(0, 0) == 0;
 		assert calculateTax(20000, -1) == 0;
 		assert calculateTax(20000, 0) == 800;
@@ -44,6 +45,12 @@ public class Wrapper {
 		assert calculateTax(100000, 1) == 11700;
 		assert calculateTax(100000, 3) == 9750;
 		assert calculateTax(100000, 5) == 7800;
+
+        //Joseph tests
+
+
+
+
 	}
 
     public static double calculateTax(int annualincome, int Dependents) {
