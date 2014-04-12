@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 
-		//Wrapper.Run();
+		Wrapper.Run();
 		Dependents Dep = new Dependents();
 		Income Inc = new Income();
 		int annualincome = 1, numofdependents = 0;
